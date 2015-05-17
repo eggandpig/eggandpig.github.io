@@ -1,0 +1,19 @@
+@import "bourbon", "base/base", "neat";
+
+body {
+  @include outer-container($max-width);
+}
+
+article {
+  @include background(linear-gradient(yellow, white) right repeat);
+  @include media($large-screen-up) {
+    @include span-columns(5);
+  }
+}
+
+aside {
+  @include background(linear-gradient(orange, white) right repeat);
+  @include media($large-screen-up) {
+    @include span-columns(3);
+  }
+}

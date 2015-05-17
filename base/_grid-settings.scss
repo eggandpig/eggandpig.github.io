@@ -1,0 +1,16 @@
+@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Overrides
+$column: modular-scale(3, 1em, $golden) !global;
+$gutter: modular-scale(1, 1em, $golden) !global;
+$grid-columns: 4;
+$max-width: 100%;
+
+// Neat Breakpoints
+$medium-screen: em(640);
+$large-screen: em(860);
+$xlarge-screen: em(1440);
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
+$xlarge-screen-up: new-breakpoint(min-width $xlarge-screen 8);
