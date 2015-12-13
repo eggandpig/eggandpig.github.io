@@ -41,7 +41,16 @@
 
 @import 'util/util';
 
-// 0. Brand Colors
+// Modular Scale
+// ---------
+
+$ms-base: 1em;
+$ms-ratio: $golden;
+$ms-range:
+  $minor-third map-get($breakpoints, small),
+  $major-third  map-get($breakpoints, medium);
+
+// Brand Colors
 // ---------
 
 $color-egg: rgb(255,178,15);
@@ -108,7 +117,7 @@ $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
 $rem-base: 16px;
-$space-base: $rem-base * 1.5;
+$space-base: $rem-base * 1.5; // added
 
 // 2. Breakpoints
 // --------------
@@ -140,20 +149,28 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
-    'h5': 17,
+    'h1': 39.813,
+    'h2': 33.178,
+    'h3': 27.648,
+    'h4': 23.04,
+    'h5': 19.2,
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
+    'h1': 48.828,
+    'h2': 39.063,
+    'h3': 31.25,
     'h4': 25,
     'h5': 20,
     'h6': 16,
+  ),
+  large: (
+    'h1': 67.139,
+    'h2': 53.711,
+    'h3': 42.969,
+    'h4': 34.375,
+    'h5': 27.5,
+    'h6': 22,
   ),
 );
 $header-color: $body-font-color;
