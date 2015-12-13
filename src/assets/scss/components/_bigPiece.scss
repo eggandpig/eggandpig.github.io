@@ -1,0 +1,25 @@
+.bigPiece {
+  padding-left: $space-base *5;
+  padding-right: $space-base *5;
+}
+.bigPiece--tall {
+  padding-bottom: $space-base *5;
+  padding-top: $space-base *5;
+}
+.bigPiece--medium {
+  padding-bottom: $space-base *3;
+  padding-top: $space-base *3;
+}
+.bigPiece--short {
+  padding-bottom: $space-base *2;
+  padding-top: $space-base *2;
+}
+.bigPiece--colorPig {
+  background-color: $color-pig;
+}
+.bigPiece--colorPig .bigPiece-header {
+  color: $header-color--onDark;
+}
+.bigPiece--colorEgg {
+  background-color: $color-egg;
+}

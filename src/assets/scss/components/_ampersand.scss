@@ -1,0 +1,9 @@
+.amp {
+  font-family: "freight-big-pro", $header-font-family;
+  font-style: italic;
+}
+@for $i from 3 through 9 {
+  .amp--#{$i}00 {
+    font-weight: #{$i}00;
+  }
+}
